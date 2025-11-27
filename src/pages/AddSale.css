@@ -1,0 +1,108 @@
+* {
+  font-family: "Times New Roman", Times, serif !important;
+  font-weight: 600;
+}
+
+.page-container {
+  padding: 20px;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.back-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #6a0dad;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #570caa;
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #6a0dad;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #6a0dad;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background: #570caa;
+}
+
+.error-message {
+  background: #ffebee;
+  border-left: 4px solid #d32f2f;
+  color: #a00;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .form-card {
+    padding: 18px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .back-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

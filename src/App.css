@@ -1,3 +1,55 @@
+body,
+.card,
+input,
+button,
+label,
+p,
+h4 {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.btn-bg-match {
+  background-color: #7d36d3ff !important;
+  border-color: #7d36d3ff !important;
+  color: white !important;
+}
+
+.btn-bg-match:hover {
+  background-color: #6329b3ff !important;
+  border-color: #6329b3ff !important;
+}
+.btn-bg-match1 {
+  background-color: white !important;
+  border-color: white !important;
+  color: black !important;
+}
+
+.btn-bg-match1:hover {
+  background-color: #6329b3ff !important;
+  border-color: #6329b3ff !important;
+  color: white !important;
+}
+input::placeholder {
+  font-size: 0.9rem;
+  color: #bfbfbf;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.top-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+
+.top-register-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .App {
   text-align: center;
 }

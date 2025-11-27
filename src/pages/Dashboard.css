@@ -1,0 +1,157 @@
+* {
+  font-family: "Times New Roman", Times, serif !important;
+  font-weight: 600;
+}
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f4f8;
+  font-family: "Times New Roman", Times, serif !important;
+  font-weight: 600;
+}
+
+.sidebar {
+  width: 250px;
+  background: #7e3ff2;
+  color: white;
+  padding: 1.5rem;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.sidebar-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar button {
+  background: white;
+  color: #7e3ff2;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sidebar button:hover {
+  background: #eee1ff;
+}
+
+.logout-btn {
+  background: #d9534f;
+  color: #7e3ff2 !important;
+}
+.logout-btn:hover {
+  background: #c9302c;
+}
+
+.dashboard-main {
+  margin-left: 260px;
+  padding: 2rem;
+  flex: 1;
+}
+
+.welcome-title {
+  color: #7e3ff2;
+}
+
+.stats-cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sales-total-card {
+  grid-column: span 3;
+}
+
+.big-number {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #7e3ff2;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 10000;
+  cursor: pointer;
+}
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background: #7e3ff2;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+.close-btn {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 9999 !important;
+  }
+
+  .sidebar-title {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 10000 !important;
+  }
+
+  .dashboard-main {
+    margin-left: 0;
+    padding-top: 70px;
+  }
+
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-total-card {
+    grid-column: span 1;
+  }
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    display: block;
+    z-index: 10001;
+  }
+}
