@@ -76,7 +76,7 @@ export default function Login() {
                 onChange={handleChange}
                 required
                 className="form-control form-control-lg"
-                placeholder="your.email@example.com"
+                placeholder="Enter Your Email"
               />
             </div>
 
@@ -92,7 +92,7 @@ export default function Login() {
                 onChange={handleChange}
                 required
                 className="form-control form-control-lg"
-                placeholder="Create a strong password"
+                placeholder="Enter Your Password"
               />
             </div>
 
